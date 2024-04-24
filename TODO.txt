@@ -1,6 +1,6 @@
 ### TODO
 
-0. INTERLUDE LEVEL CLEARED' looks different from other levels
+0. INTERLUDE LEVEL CLEARED has 2 audio channels overlapping
 1. Player/pilot roster (top 10 players and show current point score in right top corner)
 2. Save roster to disk and show when game is over
 3. Fix level announcement not working because of checking for pause condition
