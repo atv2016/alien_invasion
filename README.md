@@ -8,18 +8,23 @@ All the mistakes and things that don't work properly, or are hacky, are all mine
 
 ![Screenshot 2024-04-24 at 19 43 29](https://github.com/atv2016/alien_invasion/assets/16917203/f8343c4a-4805-4018-af29-c074c4af45fa)
 
+The game will ask you to register as a pilot. Type your name or press enter if you to proceed as a anonymous flyer.
+
 ![Screenshot 2024-04-24 at 19 44 10](https://github.com/atv2016/alien_invasion/assets/16917203/f45a8d35-118a-49a4-a2d4-926275e433f8)
 
+A Hud is kept in the bottom, with your picture, and ammunition in the right corner. Score is kept in the top left, and your healthbar is shown in the top right corner.
 
 ![Screenshot 2024-04-24 at 19 44 29](https://github.com/atv2016/alien_invasion/assets/16917203/d509110a-edab-4cd9-8d0d-7e7f6e35dc4d)
 
+Before the final boss level starts a little heart to heart with the bad guy is shown on screen.
+
 # Use
-Use spacebar to fire
-Use cursor keys to move up or down, left or right
-If the aliens hit you or you hit them you die
-Wipe out all the aliens and proceed to the next level
-Press F for fullscreen and W for window (window will be redrawn)
-Press P to pause the game, Q to quit game
+Use spacebar to fire<br>
+Use cursor keys to move up or down, left or right<br>
+If the aliens hit you or you hit them you die<br>
+Wipe out all the aliens and proceed to the next level<br>
+Press F for fullscreen and W for window (window will be redrawn)<br>
+Press P to pause the game, Q to quit game<br>
 
 # Assets
 All sounds are created by me.
