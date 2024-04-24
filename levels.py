@@ -23,12 +23,16 @@ class Level:
                 self.red = (0,0,255)
 
                 # Show level background
-                self.level_1=pygame.Surface.convert_alpha(pygame.image.load("images/base.png"))
-                self.level_2=pygame.Surface.convert_alpha(pygame.image.load("images/base_2.png"))
-                self.level_3=pygame.Surface.convert_alpha(pygame.image.load("images/commanderxen.png"))
+                self.level_1=pygame.Surface.convert_alpha(pygame.image.load("images/base.jpg"))
+                self.level_2=pygame.Surface.convert_alpha(pygame.image.load("images/base_2.jpg"))
+                self.level_3=pygame.Surface.convert_alpha(pygame.image.load("images/commanderxen_boss.jpg"))
                 self.level_4=pygame.Surface.convert_alpha(pygame.image.load("images/base_4.jpg"))
-                self.level_5=pygame.Surface.convert_alpha(pygame.image.load("images/base_4.jpg"))
-                self.level_6=pygame.Surface.convert_alpha(pygame.image.load("images/base_4.jpg"))
+                self.level_5=pygame.Surface.convert_alpha(pygame.image.load("images/base_5.jpg"))
+                self.level_6=pygame.Surface.convert_alpha(pygame.image.load("images/base_6.jpg"))
+                self.level_7=pygame.Surface.convert_alpha(pygame.image.load("images/base_7.jpg"))
+                self.level_8=pygame.Surface.convert_alpha(pygame.image.load("images/lorelei_boss.jpg"))
+                self.level_9=pygame.Surface.convert_alpha(pygame.image.load("images/base_9.jpg"))
+                self.level_10=pygame.Surface.convert_alpha(pygame.image.load("images/base_9.jpg"))
     
                 self.passed_time=500
                 
@@ -45,9 +49,9 @@ class Level:
                 self.level_dict_4={'boss_fight':True,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
                 self.level_dict_5={'boss_fight':False,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
                 self.level_dict_6={'boss_fight':False,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
-                self.level_dict_7={'boss_fight':False,'interlude':True,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
-                self.level_dict_8={'boss_fight':True,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
-                self.level_dict_9={'boss_fight':False,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
+                self.level_dict_7={'boss_fight':False,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
+                self.level_dict_8={'boss_fight':False,'interlude':True,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':True}
+                self.level_dict_9={'boss_fight':True,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
                 self.level_dict_10={'boss_fight':False,'interlude':False,'blinked':False,'start':False,'finish': False,'rotate_val':10,'rotate_time': 100,'alien_speed':1,'pause':False}
 
                 # Setup attributes per level
@@ -212,6 +216,126 @@ class Level:
                         #self.rect = self.level_1.get_rect() just now
                         self.rect = self.screen.screen.get_rect()
                         self.screen.screen.blit(self.level_5, self.rect)
+                        # copying the text surface object
+                        # to the display surface object
+                        # at the center coordinate.
+                        self.screen.screen.blit(text, textRect)
+
+                        self.level_announce()
+
+                if self.screen.level_number == 6:
+                        
+                        self.screen.settings.alien_speed=1
+                        self.screen.settings.rotate_val=10       
+
+                        # create a font object.
+
+                        text = self.top_marker.render(f'Level 6 - Planet Sol Aliens Alive: {len(self.screen.aliens)} Aliens Killed: {self.screen.aliens_killed}', True, self.green, self.blue)
+
+                        if self.level_attributes[self.screen.level_number-1]['start']==False:
+                                if(self.passed_time==500): # Wait that no other blit is happening
+                                        self.screen.message='Level 6!'
+                                        self.screen.text = self.level_marker.render(self.screen.message, True, self.green, self.blue)
+                                        self.level_attributes[self.screen.level_number-1]['start']=True
+
+                        # create a rectangular object for the
+                        # text surface object
+                        textRect = text.get_rect()
+
+                        # Blit the level background image
+                        #self.rect = self.level_1.get_rect() just now
+                        self.rect = self.screen.screen.get_rect()
+                        self.screen.screen.blit(self.level_6, self.rect)
+                        # copying the text surface object
+                        # to the display surface object
+                        # at the center coordinate.
+                        self.screen.screen.blit(text, textRect)
+
+                        self.level_announce()
+
+                if self.screen.level_number == 7:
+                        
+                        self.screen.settings.alien_speed=1
+                        self.screen.settings.rotate_val=10       
+
+                        # create a font object.
+
+                        text = self.top_marker.render(f'Level 7 - W.O.R. Compound Aliens Alive: {len(self.screen.aliens)} Aliens Killed: {self.screen.aliens_killed}', True, self.green, self.blue)
+
+                        if self.level_attributes[self.screen.level_number-1]['start']==False:
+                                if(self.passed_time==500): # Wait that no other blit is happening
+                                        self.screen.message='Level 7!'
+                                        self.screen.text = self.level_marker.render(self.screen.message, True, self.green, self.blue)
+                                        self.level_attributes[self.screen.level_number-1]['start']=True
+
+                        # create a rectangular object for the
+                        # text surface object
+                        textRect = text.get_rect()
+
+                        # Blit the level background image
+                        #self.rect = self.level_1.get_rect() just now
+                        self.rect = self.screen.screen.get_rect()
+                        self.screen.screen.blit(self.level_7, self.rect)
+                        # copying the text surface object
+                        # to the display surface object
+                        # at the center coordinate.
+                        self.screen.screen.blit(text, textRect)
+
+                        self.level_announce()
+
+                if self.screen.level_number == 8:
+                        
+                        self.screen.settings.alien_speed=1
+                        self.screen.settings.rotate_val=10       
+
+                        # create a font object.
+
+                        text = self.top_marker.render('Lorelei: You are insignificant human. You will die.', True, self.white, self.black)
+
+                        if self.level_attributes[self.screen.level_number-1]['start']==False:
+                                if(self.passed_time==500): # Wait that no other blit is happening
+                                        self.screen.message='Lorelei!!'
+                                        self.screen.text = self.level_marker.render(self.screen.message, True, self.green, self.blue)
+                                        self.level_attributes[self.screen.level_number-1]['start']=True
+
+                        # create a rectangular object for the
+                        # text surface object
+                        textRect = text.get_rect()
+
+                        # Blit the level background image
+                        #self.rect = self.level_1.get_rect() just now
+                        self.rect = self.screen.screen.get_rect()
+                        self.screen.screen.blit(self.level_8, self.rect)
+                        # copying the text surface object
+                        # to the display surface object
+                        # at the center coordinate.
+                        self.screen.screen.blit(text, textRect)
+
+                        self.level_announce()
+
+                if self.screen.level_number == 9:
+                        
+                        self.screen.settings.alien_speed=1
+                        self.screen.settings.rotate_val=10       
+
+                        # create a font object.
+
+                        text = self.top_marker.render(f'Level 9 - Lorelei Aliens Alive: {len(self.screen.aliens)} Aliens Killed: {self.screen.aliens_killed}', True, self.green, self.blue)
+
+                        if self.level_attributes[self.screen.level_number-1]['start']==False:
+                                if(self.passed_time==500): # Wait that no other blit is happening
+                                        self.screen.message='Level 9! - BOSS FIGHT!'
+                                        self.screen.text = self.level_marker.render(self.screen.message, True, self.green, self.blue)
+                                        self.level_attributes[self.screen.level_number-1]['start']=True
+
+                        # create a rectangular object for the
+                        # text surface object
+                        textRect = text.get_rect()
+
+                        # Blit the level background image
+                        #self.rect = self.level_1.get_rect() just now
+                        self.rect = self.screen.screen.get_rect()
+                        self.screen.screen.blit(self.level_9, self.rect)
                         # copying the text surface object
                         # to the display surface object
                         # at the center coordinate.

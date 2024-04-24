@@ -84,6 +84,26 @@ class Captain:
         tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
         tts_identify.save("sounds/level5.mp3")
 
+        tts_identify_text='Level 6'
+        tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
+        tts_identify.save("sounds/level6.mp3")
+    
+        tts_identify_text='Level 7'
+        tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
+        tts_identify.save("sounds/level7.mp3")
+    
+        tts_identify_text='Level 8'
+        tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
+        tts_identify.save("sounds/level8.mp3")
+    
+        tts_identify_text='Level 9'
+        tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
+        tts_identify.save("sounds/level9.mp3")
+    
+        tts_identify_text='Level 10'
+        tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
+        tts_identify.save("sounds/level10.mp3")
+
         tts_identify_text='Interlude'
         tts_identify= gTTS(tts_identify_text, lang='en',slow=False)
         tts_identify.save("sounds/interlude.mp3")
@@ -126,7 +146,7 @@ class Captain:
              #if time.time() % 1 > 0.5: # Add a timer to lower framerate if needed
             if self.cam.query_image():
                 self.snapshot = self.cam.get_image(self.snapshot)
-
+                
         # Blit mugshot and name
         self.screen.screen.blit(self.snapshot, (0,self.screen.settings.screen_height-200))
         # If we haven't set our name yet flash for input (and keep flashing Taito style)

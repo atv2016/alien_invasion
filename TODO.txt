@@ -22,3 +22,6 @@ and add sound for picking up multipliers
 18. Add interlude levels that we use for talking to heroes as well (after meeting them on the battlefield) and that will join us for a 
 short while
 19. Add parallax levels that scroll from top to bottom r-type style
+20. Add ingame thumbnail of upcoming bosses taunting player
+21. Add aliens shouting at player (e.g. 'Jerk!')
+22. Add levels with just story text to further the story

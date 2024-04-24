@@ -19,6 +19,11 @@ class Alien(Sprite):
         self.ai_game.level.level_attributes[3]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/xen_spaceship-2.png"))
         self.ai_game.level.level_attributes[4]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
         self.ai_game.level.level_attributes[5]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[6]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[7]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[8]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[9]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[10]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
 
 
 
