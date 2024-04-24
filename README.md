@@ -32,7 +32,7 @@ Press P to pause the game, Q to quit game<br>
 
 # Assets
 All sounds are created by me.
-I don't know where the backgrounds or alien assets come from so please use your own if you fork this and redistribute.
+All backgrounds and images <a href="https://www.vecteezy.com/free-photos/aliens">Aliens Stock photos by Vecteezy</a>
 
 # Prequirements
 Reasonably fast machine<br>
