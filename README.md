@@ -5,7 +5,7 @@ Expansion of the original alien invasion by Eric Matthes from Python fame. I use
 All the mistakes and things that don't work properly, or are hacky, are all mine. 
 
 # Assets
-All sounds is created by me.
+All sounds are created by me.
 I don't know where the backgrounds or alien assets come from so please use your own if you fork this and redistribute.
 
 # Prequirements
