@@ -6,20 +6,19 @@ Alien Invasion Redux
 Expansion of the original alien invasion by Eric Matthes from Python fame. I used this as a vehicle for learning about PyGame and Python in general so i might add things in here that have no need to be in there.
 All the mistakes and things that don't work properly, or are hacky, are all mine. This is a work in progress and everything that still needs to be done is listed in the TODO list.
 
-![Screenshot 2024-04-24 at 19 43 29](https://github.com/atv2016/alien_invasion/assets/16917203/f8343c4a-4805-4018-af29-c074c4af45fa)
-
+<insert screenshot>
+  
 The game will ask you to register as a pilot. Type your name or press enter if you want to proceed as a anonymous flyer.
 
-![Screenshot 2024-04-24 at 19 44 10](https://github.com/atv2016/alien_invasion/assets/16917203/f45a8d35-118a-49a4-a2d4-926275e433f8)
-
+<insert screenshot>
+  
 A Hud is kept in the bottom, with your picture, and ammunition in the right corner. Score is kept in the top left, and your healthbar is shown in the top right corner.
 
-![Screenshot 2024-04-24 at 19 44 29](https://github.com/atv2016/alien_invasion/assets/16917203/d509110a-edab-4cd9-8d0d-7e7f6e35dc4d)
-
+<insert screenshot>
+  
 Before the final boss level starts a little heart to heart with the bad guy is shown on screen.
 
-![Screenshot 2024-04-24 at 19 44 41](https://github.com/atv2016/alien_invasion/assets/16917203/8463edf2-e2eb-44ed-a073-992cfc8a65c9)
-
+<insert screenshot>
 
 # Use
 Use spacebar to fire<br>
