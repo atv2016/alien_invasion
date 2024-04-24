@@ -1,2 +1,14 @@
 # Alien Invasion
 Alien Invasion Redux
+
+Expansion of the original alien invasion by Eric Matthes from Python fame. I used this as a vehicle for learning about PyGame and Python in general.
+All the mistakes and things that don't work properly, or are hacky, are all mine. 
+
+# Assets
+All sounds is created by me.
+I don't know where the backgrounds or alien assets come from so please use your own if you fork this and redistribute.
+
+# Prequirements
+python3
+pygame (pip3 install pygame)
+gtss (pip3 install gtss)
