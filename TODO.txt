@@ -25,3 +25,5 @@ short while
 20. Add ingame thumbnail of upcoming bosses taunting player
 21. Add aliens shouting at player (e.g. 'Jerk!')
 22. Add levels with just story text to further the story
+23. Add boss fights with massive onscreen enemies, not just ships
+24. Find a smooth way of scaling (smoothscale is too blurry, scale is too pixalated) aliens

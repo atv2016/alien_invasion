@@ -14,13 +14,13 @@ class Alien(Sprite):
 
         # Load the alien image and set it's rect attribute.
         self.ai_game.level.level_attributes[0]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
-        self.ai_game.level.level_attributes[1]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
-        self.ai_game.level.level_attributes[2]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[1]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_1.png"))
+        self.ai_game.level.level_attributes[2]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_2.png"))
         self.ai_game.level.level_attributes[3]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/xen_spaceship-2.png"))
-        self.ai_game.level.level_attributes[4]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
-        self.ai_game.level.level_attributes[5]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
-        self.ai_game.level.level_attributes[6]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
-        self.ai_game.level.level_attributes[7]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
+        self.ai_game.level.level_attributes[4]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_3.png"))
+        self.ai_game.level.level_attributes[5]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_4.png"))
+        self.ai_game.level.level_attributes[6]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_5.png"))
+        self.ai_game.level.level_attributes[7]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien_6.png"))
         self.ai_game.level.level_attributes[8]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
         self.ai_game.level.level_attributes[9]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
         self.ai_game.level.level_attributes[10]['image'] = pygame.Surface.convert_alpha(pygame.image.load("images/alien.png"))
@@ -59,7 +59,7 @@ class Alien(Sprite):
             print(f"Boss fight is {self.ai_game.level.level_attributes[self.ai_game.level_number-1]['boss_fight']}, rotating alien")
             if (self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_time']) == (self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_val']):
                 # Alien comes forward by zooming in
-                self.image = pygame.transform.scale(self.image,self.scale_coordinate)
+                self.image = pygame.transform.smoothscale(self.image,self.scale_coordinate)
                 # Alien rotates by 90 degrees left or right depending on rotate_val - or +
                 self.image = pygame.transform.rotate(self.image, 90)
                 self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_val'] = 0

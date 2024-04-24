@@ -137,7 +137,7 @@ class Captain:
         # Get a snapshot of the pilot
         if self.gotcaptain!=1:
             if self.cam.query_image():
-                self.snapshot = self.cam.get_image(self.snapshot)
+                #self.snapshot = self.cam.get_image(self.snapshot)
                 self.gotcaptain=1
                 #self.cam.stop()
 
@@ -145,7 +145,8 @@ class Captain:
         if self.screen.level.level_attributes[self.screen.level_number-1]['interlude']==True:
              #if time.time() % 1 > 0.5: # Add a timer to lower framerate if needed
             if self.cam.query_image():
-                self.snapshot = self.cam.get_image(self.snapshot)
+                #self.snapshot = self.cam.get_image(self.snapshot)
+                print('test')
                 
         # Blit mugshot and name
         self.screen.screen.blit(self.snapshot, (0,self.screen.settings.screen_height-200))
