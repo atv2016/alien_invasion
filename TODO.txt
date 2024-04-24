@@ -30,3 +30,8 @@ short while
 25. We should be loading high res images and then downscale and upscale, not resize but if we dont the code
 crashes and moves straight to the next level. Possible fix is to downscale first before drawing the fleet, as the 
 reason it moves on to the next level is because the fleet hits the player (as it's so big)
+
+1. Use high res alien images
+2. Downscale before drawing alien fleet
+3. Possibly add feature where one alien really reaches out to the player and scale up high (but will work best with images
+that look like they are rotating or forward facing, like the skeleton)
