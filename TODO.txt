@@ -27,3 +27,5 @@ short while
 22. Add levels with just story text to further the story
 23. Add boss fights with massive onscreen enemies, not just ships
 24. Find a smooth way of scaling (smoothscale is too blurry, scale is too pixalated) aliens
+25. We should be loading high res images and then downscale and upscale, not resize but if we dont the code
+crashes and moves straight to the next level
