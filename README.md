@@ -9,6 +9,6 @@ All sounds is created by me.
 I don't know where the backgrounds or alien assets come from so please use your own if you fork this and redistribute.
 
 # Prequirements
-python3
-pygame (pip3 install pygame)
+python3<br>
+pygame (pip3 install pygame)<br>
 gtss (pip3 install gtss)
