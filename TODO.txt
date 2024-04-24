@@ -28,4 +28,5 @@ short while
 23. Add boss fights with massive onscreen enemies, not just ships
 24. Find a smooth way of scaling (smoothscale is too blurry, scale is too pixalated) aliens
 25. We should be loading high res images and then downscale and upscale, not resize but if we dont the code
-crashes and moves straight to the next level
+crashes and moves straight to the next level. Possible fix is to downscale first before drawing the fleet, as the 
+reason it moves on to the next level is because the fleet hits the player (as it's so big)
