@@ -18,6 +18,9 @@ A Hud is kept in the bottom, with your picture, and ammunition in the right corn
 
 Before the final boss level starts a little heart to heart with the bad guy is shown on screen.
 
+![Screenshot 2024-04-24 at 19 44 41](https://github.com/atv2016/alien_invasion/assets/16917203/8463edf2-e2eb-44ed-a073-992cfc8a65c9)
+
+
 # Use
 Use spacebar to fire<br>
 Use cursor keys to move up or down, left or right<br>
