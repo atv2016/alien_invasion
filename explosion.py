@@ -11,7 +11,7 @@ class Explosion(Sprite):
 		self.images = []
 		for num in range(1, 6):
 			img = pygame.image.load(f"images/exp{num}.png")
-			img = pygame.transform.scale(img, (100, 100))
+			img = pygame.transform.smoothscale(img, (100, 100))
 			self.images.append(img)
 		self.index = 0
 		self.image = self.images[self.index]
@@ -34,7 +34,7 @@ class Explosion(Sprite):
 			self.image = self.images[self.index]
 			# Make explosion more dynamic but randomizing how large it is. Use the same coordinates if you want to keep
 			# explosion semi-proportional (e.g. x,x)
-			self.image = pygame.transform.scale(self.image,(self.exp_coordinate_x,self.exp_coordinate_x))
+			self.image = pygame.transform.smoothscale(self.image,(self.exp_coordinate_x,self.exp_coordinate_x))
 
 
 		#if the animation is complete, reset animation index

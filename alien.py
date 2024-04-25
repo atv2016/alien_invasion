@@ -29,6 +29,14 @@ class Alien(Sprite):
 
         print(f"Loading level {self.ai_game.level_number} alien image")
         self.image=self.ai_game.level.level_attributes[self.ai_game.level_number-1]['image'] # Sprite derivative class expects a self.image
+
+        # Set one size for regular aliens      
+        if(self.ai_game.level.level_attributes[self.ai_game.level_number-1]['boss_fight']==False):
+            self.image = pygame.transform.smoothscale(self.image,(100,100))
+        else:
+            # And another for boss aliens
+            self.image = pygame.transform.smoothscale(self.image,(500,150))
+
         self.prescale=self.image
         self.rect = self.image.get_rect()
 
@@ -59,7 +67,7 @@ class Alien(Sprite):
             print(f"Boss fight is {self.ai_game.level.level_attributes[self.ai_game.level_number-1]['boss_fight']}, rotating alien")
             if (self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_time']) == (self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_val']):
                 # Alien comes forward by zooming in
-                self.image = pygame.transform.scale(self.image,self.scale_coordinate)
+                #self.image = pygame.transform.scale(self.image,self.scale_coordinate)
                 # Alien rotates by 90 degrees left or right depending on rotate_val - or +
                 self.image = pygame.transform.rotate(self.image, 90)
                 self.ai_game.level.level_attributes[self.ai_game.level_number-1]['rotate_val'] = 0
